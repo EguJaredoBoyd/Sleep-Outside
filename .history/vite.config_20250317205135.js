@@ -1,20 +1,7 @@
 import { resolve } from "path";
 import { defineConfig } from "vite";
 
-
-
 export default defineConfig({
-  plugins: [viteStaticCopy()],
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'src/index.html'),
-        product_listing: resolve(__dirname, 'src/product_listing/index.html')
-      }
-    }
-  }
-},
-{
   root: "src/",
 
   build: {
@@ -41,5 +28,3 @@ export default defineConfig({
     },
   },
 });
-
-
